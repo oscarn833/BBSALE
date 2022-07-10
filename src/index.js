@@ -3,8 +3,12 @@ const mysqlConnection = require("./database");
 const cors = require("cors");
 const app = express();
 const port = 3000;
+const path = require("path");
 
 app.use(cors());
+app.use("/", express.static(path.join(__dirname, "../FRONTEND/")));
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.json());
 app.use(
@@ -12,10 +16,6 @@ app.use(
         extended: true,
     })
 );
-
-app.get("/", (req, res) => {
-    res.json({ message: "ok" });
-});
 
 app.get("/producto", (req, res) => {
     mysqlConnection.query(
