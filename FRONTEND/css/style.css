@@ -1,0 +1,22 @@
+* {
+    font-family: JetBrains Mono;
+}
+
+.new-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+}
+img {
+    width: 120px 120px;
+    height: 299px;
+}
+
+#img-content {
+    background-color: #fff;
+}
+
+.dropdown {
+    /* border: 5px solid black; */
+}
