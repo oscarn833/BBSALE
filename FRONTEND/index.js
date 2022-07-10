@@ -48,9 +48,9 @@ try {
                     parrafo.appendChild(document.createTextNode("$ " + price));
                     divPrecio.appendChild(tituloTarjeta);
                     divPrecio.appendChild(parrafo);
-                    boton.addEventListener("click", () => {
-                        location.reload();
-                    });
+                    // boton.addEventListener("click", () => {
+                    //     location.reload();
+                    // });
                 };
 
                 boton.addEventListener("click", body);
