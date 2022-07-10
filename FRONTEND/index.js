@@ -3,7 +3,7 @@ una variable llamada 'myInput'. Esta variable es la que funciona como filtro,
 ya que es la que está conectada con la consulta de la base de datos.
 */
 //API
-const userURL = "http://localhost:3000/producto";
+const userURL = "https://bsale0.herokuapp.com/producto";
 //FILTRO
 const myInput = document.querySelector("#buscar").value;
 try {
@@ -21,7 +21,6 @@ try {
                     let nm = json.name.toLowerCase();
                     const energetica = document.getElementById("energetica").value;
                     const dos = document.getElementById("energetica");
-
 
                     const list = document.getElementById("img-content");
                     let div = document.createElement("div");
